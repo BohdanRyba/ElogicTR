@@ -1,0 +1,10 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="products" xsi:type="object">Bohdan\ProductScaner\Console\Command\ScanProducts</item>
+            </argument>
+        </arguments>
+    </type>
+    <preference for="Bohdan\ProductScaner\Api\Terminal" type="Bohdan\ProductScaner\Service\Terminal" />
+</config>
